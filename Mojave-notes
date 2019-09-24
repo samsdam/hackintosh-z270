@@ -8,3 +8,12 @@ http://mackie100projects.altervista.org/download-clover-configurator/
 optional
 https://assets.vemedio.com/blog/EFI-Asrock-z270.zip
 - from https://martinhering.me/post/my-new-silent-small-hackintosh-for-600-eur
+
+I’m just gonna break it down to individual categories…
+BIOS
+BIOS settings:Load Optimized Defaults and then…
+VT-d setting, disable it
+CFG-Lock, disable it
+Secure Boot Mode, disable it
+Set XHCI Handoff to Enabled
+CSM (under boot). disable it
