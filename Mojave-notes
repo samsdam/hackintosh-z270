@@ -4,6 +4,8 @@ Downloaded files:
 https://bitbucket.org/RehabMan/os-x-maciasl-patchmatic/downloads
 http://mac.softpedia.com/get/System-Utilities/IORegistryExplorer.shtml
 http://mackie100projects.altervista.org/download-clover-configurator/
+https://github.com/acidanthera/WhateverGreen/releases
+https://github.com/acidanthera/Lilu/releases
 
 optional
 https://assets.vemedio.com/blog/EFI-Asrock-z270.zip
@@ -51,3 +53,13 @@ Under Advanced\Chipset Configuration set Primary Graphics Adapter to Onboard. VT
 Under Advanced\USB Configuration set XHCI Hand-off to Enabled.
 Under Boot\CSM(Compatibility Support Module) set CSM to Disabled.
 Press F10 to Save and Exit.​
+
+
+
+to get the mojave installer working 
+changed smbios to iMac18,3
+devices > properties > PciRoot(0x0)/Pci(0x2,0x0) - AAPL,ig-platform-id:<00001259>
+added kexts
+- FakeSMC
+- Lilu
+- WhateverGreen
