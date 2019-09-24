@@ -9,11 +9,45 @@ optional
 https://assets.vemedio.com/blog/EFI-Asrock-z270.zip
 - from https://martinhering.me/post/my-new-silent-small-hackintosh-for-600-eur
 
-I’m just gonna break it down to individual categories…
-BIOS
-BIOS settings:Load Optimized Defaults and then…
-VT-d setting, disable it
-CFG-Lock, disable it
-Secure Boot Mode, disable it
-Set XHCI Handoff to Enabled
-CSM (under boot). disable it
+2. Download files:
+TonyMacx86
+UniBeast
+MultiBeast Mojave
+KextBeast 
+RehabMan (download the latest)
+FakePCIID_Intel_HD_Graphics.kext and FakePCIID.kext
+FakeSMC.kext
+USBInjectAll.kext
+XHCI-200-series-injector.kext # now XHCI-unsupported.kext?
+mackie100 
+Clover Configurator 
+vit9696
+AppleALC
+LiLu
+onmybikedrunk (see this post)
+Blanket Starter Config
+iGPU Config
+SSDT-UIAC.aml
+
+3. Create bootable Mojave USB drive
+Open Disk Utility
+Select USB drive in left pane
+Click Erase
+4. Run UniBeast
+Select USB drive
+Select UEFI Boot Mode
+Select Mojave
+5. Copy downloaded files to USB
+6. Open EFI mounted volume
+Go to EFI > CLOVER and delete config.plist then copy starter_config.plist and rename it to config.plist
+Go to EFI > CLOVER > kexts > Other and copy FakeSMC.kext, USBInjectAll.kext and XHCI-200-series-injector.kext.​
+
+
+9. BIOS Settings
+Press F6 to enter Advanced mode
+Under Exit > Load UEFI Defaults
+Under Advanced\CPU Configuration make sure CFG Lock is Disabled.
+Under Advanced\Chipset Configuration set Primary Graphics Adapter to Onboard. VT-d to Disabled. Share Memory to 1024M and IGPU Multi-Monitor to Enabled.
+Under Advanced\USB Configuration set XHCI Hand-off to Enabled.
+Under Boot\CSM(Compatibility Support Module) set CSM to Disabled.
+Press F10 to Save and Exit.​
