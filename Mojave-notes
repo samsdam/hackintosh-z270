@@ -70,6 +70,7 @@ added kexts
 Patch notes:
 
 If you have randomly floating regions, you can try Clover's FixRegions feature (config.plist/ACPI/DSDT/Fixes/FixRegions=true). You can find the details in the Clover Wiki. Note: Only floating regions in DSDT can be fixed by FixRegions. Floating regions in SSDTs are problematic and there is no good solution other than to not provide patched SSDTs for SSDTs subject to randomly floating regions. Working around floating regions in patched SSDTs is beyond the scope of this guide. Note that FixRegions is relatively buggy. It cannot fix all regions and it can sometimes "fix" regions incorrectly.
+dsdt clover patch GLAN to GIGE, maybe. Also maybe only for mald0n dsdt patches.
 
 
 
