@@ -9,6 +9,7 @@ Streacom F1CWS Chassis - Black
  
 ASRock Fatal1ty Z270 GAMING-ITX/AC
  - https://www.newegg.com/p/N82E16813157752?Item=N82E16813157752
+ - TB3 chipset appears to be JHL6240
 
 Intel Core i7-7700 Kaby Lake Quad-Core 3.6 GHz LGA 1151 65W
 
