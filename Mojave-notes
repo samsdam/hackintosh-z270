@@ -72,6 +72,9 @@ Patch notes:
 If you have randomly floating regions, you can try Clover's FixRegions feature (config.plist/ACPI/DSDT/Fixes/FixRegions=true). You can find the details in the Clover Wiki. Note: Only floating regions in DSDT can be fixed by FixRegions. Floating regions in SSDTs are problematic and there is no good solution other than to not provide patched SSDTs for SSDTs subject to randomly floating regions. Working around floating regions in patched SSDTs is beyond the scope of this guide. Note that FixRegions is relatively buggy. It cannot fix all regions and it can sometimes "fix" regions incorrectly.
 dsdt clover patch GLAN to GIGE, maybe. Also maybe only for mald0n dsdt patches.
 
-
+#############
+New fix for both sleep and igpu acceleration. Maybe also enables power management for z270 chipset and hd630
+by https://www.insanelymac.com/forum/topic/325352-intel-hd-630-acceleration/?do=findComment&comment=2665333
+remember to delete whatevergreen.kext
 
 
